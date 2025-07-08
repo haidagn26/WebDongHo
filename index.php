@@ -55,7 +55,7 @@ include 'header.php';
                 </video>
             </div>
             <div class="content-side">
-                <h2>NEW COLLECTION ARRIVAL IN 2025...... </h2>
+                <h2>NEW COLLECTION ARRIVAL IN 2025... </h2>
                 <p>Khám phá bộ sưu tập nhẫn kim cương mới nhất 2025, nơi tinh hoa thiết kế và sự tinh xảo trong từng đường nét hội tụ. Mỗi chiếc nhẫn không chỉ là món trang sức sang trọng mà còn là biểu tượng của vẻ đẹp vĩnh cửu và đẳng cấp thời thượng.
 
 Lấy cảm hứng từ sự thanh lịch và hiện đại, bộ sưu tập mang đến những thiết kế đa dạng từ phong cách cổ điển tinh tế đến kiểu dáng hiện đại đầy cá tính. Từng viên kim cương được tuyển chọn khắt khe, kết hợp với nghệ thuật chế tác bậc thầy, tạo nên những tuyệt tác rực rỡ, tôn vinh vẻ đẹp và sự sang trọng cho người sở hữu.
