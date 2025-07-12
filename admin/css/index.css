@@ -1,0 +1,176 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Layout chính */
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar (từ nav_bar.php) */
+.sidebar {
+    width: 250px;
+    background-color: #e74c3c;
+    padding: 20px;
+    color: #fff;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    transition: width 0.3s;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.sidebar ul li.active a,
+.sidebar ul li a:hover {
+    background-color: #c0392b;
+}
+
+.sidebar ul li:last-child a {
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 15px;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    margin-left: 250px;
+    /* Đảm bảo nội dung không bị che bởi sidebar */
+    padding: 30px;
+    background-color: #fff;
+}
+
+.main-content header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e74c3c;
+    background-color: #ffebee;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Card trong Dashboard */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Biểu đồ */
+.chart-container {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80px;
+        padding: 10px;
+    }
+
+    .sidebar h2 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .sidebar ul li a {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .sidebar ul li a span {
+        display: none;
+    }
+
+    .sidebar ul li a i {
+        margin-right: 0;
+    }
+
+    .main-content {
+        margin-left: 80px;
+        padding: 15px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .chart-container {
+        height: 300px;
+    }
+}
+
+/* Giữ nguyên CSS của bạn, chỉ thêm một số cải tiến */
+.chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.card p.zero-value {
+    color: #7f8c8d;
+    font-style: italic;
+}
